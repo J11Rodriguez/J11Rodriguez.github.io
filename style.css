@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Teko', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: grey;   
+}
+
+.navigation {
+    position: relative;
+    height: 500px;
+    width: 70px;
+    background: white;
+    box-shadow: 10px 0 0 red;
+    border-left: 10px solid white;
+    overflow-x: hidden;
+
+}
+.navigation:hover{
+    width: 3030px;
+}
+
+.navigation ul {
+    position: absolute;
+    top: 0;
+    left 0;
+    width: 100%;
+    padding-left: 5px;
+    padding-top: 20px;
+}
+
+.navigation ul li {
+    position: relative;
+    list-style: none;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.navigation ul li .active{
+    background-color: red;
+
+}
+
+.navigation ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: aliceblue;
+}
+.navigation ul li a .icon {
+    position: relative;
+    display: block;
+    min-width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+}
+.navigation ul li a .icon ion-icon {
+    position: relative;
+    font-size: 2em;
+    z-index: 1;
+}
+.navigation ul li a .title{
+    position: relative;
+    display: block;
+    padding-left: 10px;
+    height: 70px;
+    line-height: 70px;
+    white-space: nowrap;
+}
