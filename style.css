@@ -6,15 +6,21 @@
     font-family: 'Tapestry' , sans-serif;
 
 }
+ul a {
+    color: white;
+    text-align: right;
+    position: right;
+}
+
 
 .container {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.0)),url(bogota.jpg);    
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(bogota.jpg);    
     background-position: center;
     background-size: cover;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 10px;
+    padding-right: 10px;
     box-sizing: border-box;
 }
 .navbar {
@@ -25,7 +31,7 @@
 
 nav{
     flex: 1;
-    text-align: right;
+    text-align: relative;
 }
 
 nav ul li {
@@ -35,7 +41,7 @@ nav ul li {
 }
 
 nav ul li a{
-    text-decoration: none;
+    text-decoration:double;
     color: black;
     font-size: 15px;
 }
@@ -45,7 +51,7 @@ nav ul li a{
     align-items: center;
 }
 .col{
-    flex-basis: 50%;
+    flex-basis: 70%;
 }
 h1{
     color: white;
@@ -57,31 +63,22 @@ P {
     font-size: 11px;
     line-height: 15px;
 }
-button {
-    width: 180px;
-    color: black;
-    font-size: 12px;
-    padding: 12px 0;
-    background: white;
-    border: 0;
-    border-radius: 20px;
-    outline: none;
-    margin-top: 30px;
-}
+
 .card{
-    width: 200px;
-    height: 230px;
+    width: 600px;
+    height: 300px;
     display: inline-block;
-    border-radius: 15px;
+    border-radius: 20px;
     padding: 15px 25px;
-    box-sizing: border-box;
+    box-sizing: content-box;
     cursor: pointer;
     margin: 10px 15px;
-    background-image: url(peru.jpg);
     background-position: center;
     background-size: cover;
-    transition: scale(1.0);
-    transform: matrix3d(1.0);
+    transition: scale(2.0);
+    transform: matrix3d(2.0);
+    box-shadow: 1px 1px 1px 1px;
+    backface-visibility: hidden;
 }
 .card1{
     background-image: url(NY.jpg);
@@ -96,10 +93,10 @@ button {
     }
 .card4{
     background-image: url(chile2.jpg);
-    background-size: 400%;
 }
 .card:hover{
-    transform: scale(2.0);
+    transform: scale(2.4);
+    
 }
 h1{
     position: static;
@@ -113,9 +110,9 @@ h6 {
 
 h2 {
     position: relative;
-    font-size: 5vw;
+    font-size: 3vw;
     color: black;
-    -webkit-text-stroke: blue;
+    -webkit-text-stroke: black;
     text-transform: uppercase;
 }
 h2::before {
@@ -125,8 +122,8 @@ h2::before {
     left: 0;
     width: 100%;
     height: 100%;
-    color: red;
-    -webkit-text-stroke: blue;
+    color: white;
+    -webkit-text-stroke: black;
     border-right: 0px;
     overflow: hidden;
     animation: animate 8s linear infinite;
