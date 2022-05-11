@@ -8,10 +8,9 @@
 }
 ul a {
     color: white;
-    text-align: right;
+    text-align: flex end;
     position: right;
 }
-
 
 .container {
     width: 100%;
@@ -32,6 +31,7 @@ ul a {
 nav{
     flex: 1;
     text-align: relative;
+    align-items: flex-end;
 }
 
 nav ul li {
@@ -59,9 +59,13 @@ h1{
     line-height: 15px;
 }
 P {
-    color: black;
-    font-size: 11px;
-    line-height: 15px;
+    color: white;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+h3 {
+    color: white;
 }
 
 .card{
@@ -94,8 +98,11 @@ P {
 .card4{
     background-image: url(chile2.jpg);
 }
+
+
 .card:hover{
     transform: scale(2.4);
+    cursor: pointer;
     
 }
 h1{
